@@ -9,10 +9,6 @@ Dofus Pedia est une encyclopédie de Dofus, le jeu de rôle massivement multijou
 - dans le router path="/classes/:name" (name = nom de la classe)
 - dans le composant, faire un fetch sur l'API pour récupérer les infos de la classe
 
-## Finir le bestiaire
-
-- Essayer de faire deplier une seule section et pas toutes en même temps ❌
-
 # TO CHANGE
 
 ## Clarifier le formulaire pour ajouter un mob
@@ -60,5 +56,4 @@ DB_PWD = DB_NAME = dofus_wiki;
 - **Ankama** - _Informations, images et ressources_
 
 Ce projet est réalisé dans le cadre de ma formation de développeur web full stack. Il s'agit de mon projet final.
-# Dofus
-# DOFUS
+# Dofus-Encyclop-die
