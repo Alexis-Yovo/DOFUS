@@ -61,3 +61,4 @@ DB_PWD = DB_NAME = dofus_wiki;
 
 Ce projet est réalisé dans le cadre de ma formation de développeur web full stack. Il s'agit de mon projet final.
 # Dofus
+# DOFUS
