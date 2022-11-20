@@ -1,0 +1,1243 @@
+/* Google Font */
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200&display=swap');
+/* Font custom (local) */
+@font-face {
+    font-family: 'A Charming Font Expanded';
+    font-style: normal;
+    font-weight: normal;
+    src: local('Achafexp'), url('../assets/font/Achafexp.woff') format('woff');
+}
+
+@keyframes slide {
+    0% {
+        transform: translateY(-20px);
+    }
+    100% {
+        transform: translateY(10px);
+    }
+}
+
+/* RESET CSS */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* BASE */
+html {
+    font-size: 62.5%;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    font-size: 1.6rem;
+    background-color: #E5CFB3;
+}
+
+.divDivider {
+    width: 60%;
+    border: 1px solid #514A3C;
+}
+
+/* HEADER + NAV */
+header {
+    background: url("../assets/img/header_3.jpg");
+    background-size: cover;
+    background-position-y: -15px;
+    padding: 8px;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    box-shadow: 0px -5px 50px -5px #000000;
+}
+
+.header-nav {
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+    position: absolute;
+    top: 65px;
+    right: 0;
+    background-color: #93866C;
+    z-index: 100;
+    border-bottom-left-radius: 10px;
+}
+
+.header-nav a {
+    color: #E5CFB3;
+    text-decoration: none;
+    padding: 10px;
+    border-bottom: 1px solid #E5CFB3;
+    transition: all 0.5s;
+}
+
+.sectionNav {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    text-align: right;
+}
+
+.btnNav {
+    margin: 5px;
+    padding: 5px;
+    background: inherit;
+    border-radius: 5px;
+    border: transparent;
+    font-size: 2.5rem;
+    transition: all 0.3s ease;
+    color: aliceblue;
+}
+
+.btnNav:active {
+    transform: scale(0.9);
+}
+
+/* MAIN ELEMENTS */
+h1 {
+    font-size: 6rem;
+    color: aliceblue;
+    font-family: 'A Charming Font Expanded';
+    text-shadow: 4px 4px 4px #93866C;
+}
+
+main {
+    color: #514A3C;
+    font-family: "Segoe UI Symbol";
+}
+
+.mainContent h2 {
+    text-align: center;
+    font-size: 2.8rem;
+    font-weight: 300;
+}
+
+.mainContent {
+    max-width: 80%;
+    margin: 0 auto;
+    min-height: calc(90vh - 97px);
+}
+
+.overlay {
+    /* background-color: rgba(17, 17, 17, 0.703); */
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    min-height: 100vh;
+    transition: all 0.5s;
+}
+
+.loadingData {
+    text-align: center;
+    margin: 10%;
+    color: #514A3C;
+    font-size: 3rem;
+    font-weight: 300;
+}
+
+/* HOME PAGE */
+.sectionNews {
+    margin: 5% 0 5% 0;
+    border-radius: 5px;
+}
+
+.zoneTitleDate {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #514A3C;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    color: #EBDBC6;
+    padding: 6px;
+}
+
+.zoneContent {
+    display: flex;
+}
+
+.zoneContent article {
+    background-color: #EBDBC6;
+    padding: 6px;
+    width: 100%;
+}
+
+.zoneAuthorImgName {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgba(81,74,60,.25)
+}
+
+.zoneAuthorImgName img {
+    background-color: rgba(81,74,60,.0);
+    width: 100px;
+    padding: 5px;
+}
+
+
+.authorName {
+    background-color: #93866C;
+    width: 100%;
+    color: #EBDBC6;
+    text-align: center;
+}
+
+.newsCategory {
+    background-color: #93866C;
+    color: #EBDBC6;
+    text-align: center;
+    padding: 5px;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+}
+
+.noNews {
+    text-align: center;
+    font-size: 2rem;
+    font-weight: 300;
+    margin-top: 12px;
+}
+
+/* CLASSES PAGE */
+.allClassesIcons {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.allClassesIcons a {
+    padding: 5px;
+    margin: 5px;
+    background-color: #514A3C;
+    border-radius: 5px;
+}
+
+.allClassesIcons img {
+    width: 100px;
+    height: 100px;
+}
+
+/* CLASSES PAGE OUTLET*/
+/* .classeOutlet {
+    insert here
+} */
+
+.classeName {
+    text-align: center;
+    background-color: #514A3C;
+    color: #C9BF9D;
+    margin: 10px 0 20px 0;
+    padding: 5px;
+    border-radius: 5px;
+}
+
+.classeOutlet h4 {
+    font-size: 2rem;
+}
+
+.txtClasseDesc {
+    background-color: #514A3C;
+    color: #C9BF9D;
+    width: 40%;
+    text-align: center;
+    padding: 6px;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    text-decoration: underline;
+}
+
+.classeDesc {
+    text-align: center;
+    background-color: #514A3C;
+    color: #C9BF9D;
+    border-top-right-radius: 5px;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+    padding: 8px;
+}
+
+.classesCaraH4 {
+    text-align: center;
+    margin: 10px 0 10px 0;
+}
+
+.classeTableCara, .classeTableWeapons {
+    border-collapse: collapse;
+    margin: 0 0 30px 0;
+    width: 100%;
+}
+
+.classeTableCara tr:nth-child(odd), .classeTableWeapons tr:nth-child(odd) {
+    background-color: rgba(0, 0, 0, 0.05);
+}
+
+.classeTableCara th {
+    border-collapse: collapse;
+    background-color: #93866C;
+    color: #514A3C;
+    padding: 2px;
+}
+
+.classeTableCara td {
+    text-align: center;
+    padding: 4px;
+}
+
+/* les premières lignes de la table avec les icônes élémentaires */
+.startRowIcons {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-weight: 800;
+}
+
+.classeTableWeapons thead {
+    background-color: #93866C;
+    color: #514A3C;
+}
+
+.classeTableWeapons tr {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 4px;
+}
+
+.icons-weapons {
+    width: 80%;
+    height: 50px;
+}
+
+.classeTableWeapons td {
+    text-align: center;
+    padding: 2px;
+}
+
+/* BESTIARY PAGE */
+/* .sectionMonster {
+    border: 1px solid black;
+} */
+
+.bestiarySearchBox {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    align-items: center;
+    margin-top: 16px;
+}
+
+#searchBar {
+    width: 100%;
+    padding: 5px;
+    border-radius: 5px;
+    border: 1px solid #514A3C;
+    background-color: #514A3C;
+    color: #E5CFB3;
+}
+
+.filtersMonsters {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    margin-top: 12px;
+}
+
+.filtersMonsters label, .filtersMonsters select {
+    margin: 5px;
+}
+
+#monster-name, #monster-level {
+    background-color: #514A3C;
+    color: #E5CFB3;
+    border: 1px solid #514A3C;
+    border-radius: 5px;
+}
+
+.monstersFound {
+    text-align: center;
+    margin-top: 10px;
+    color: green;
+}
+
+.monsterCard {
+    margin: 20px 0 20px 0;
+    background-color: #EBDBC6;
+}
+
+.monsterHeadInfos {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #514A3C;
+    color: #EBDBC6;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    padding: 6px;
+}
+
+.monsterCard h3 {
+    font-size: 2rem;
+    font-weight: 300;
+}
+
+.monsterLevel {
+    background-color: #C9BF9D;
+    color: #514A3C;
+    border-radius: 5px;
+    padding: 4px;
+    font-weight: 800;
+}
+
+.monsterContent {
+    display: flex;
+}
+
+.monsterContentInfos {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+.imgMonster {
+    background-color: rgba(81, 74, 60, 0.25);
+}
+
+.imgMonster img {
+    width: 100px;
+    height: 100px;
+    padding: 5px;
+}
+
+/* imgMonsterLittle = disposition différente pour les petits écrans */
+.imgMonsterLittle {
+    background-color: #514A3C;
+}
+
+.imgMonsterLittle img {
+    width: 100px;
+    height: 100px;
+    margin: 0 auto;
+    display: flex;
+}
+
+.infosMonster {
+    background-color: #514A3C;
+}
+
+.specMonster {
+    color: #EBDBC6;
+    padding: 4px;
+}
+
+.statsMonster h4 {
+    background-color: #93866C;
+    color: #EBDBC6;
+    padding: 8px;
+    font-weight: 400;
+}
+
+.statsMonster ul {
+    list-style-type: none;
+    display: flex;
+    justify-content: space-around;
+    margin: 5px 0 5px 0;
+    padding: 6px;
+}
+
+.statsMonster ul li {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.statsMonster p {
+    padding: 6px;
+}
+
+.icons-monsters {
+    width: 20px;
+    height: 20px;
+}
+
+.headHideInfos {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #93866C;
+    padding: 6px;
+}
+
+.headHideInfos button {
+    border: transparent;
+    border-radius: 50%;
+    background-color: #514A3C;
+    color: #EBDBC6;
+    padding: 4px;
+    font-weight: 400;
+}
+
+.pagination {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 10px;
+}
+
+.pagination button {
+    width: 40px;
+    height: 40px;
+    font-family: inherit;
+    font-weight: 600;
+    font-size: 16px;
+    margin: 20px 10px;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    background: transparent;
+    color: #eee;
+    border-color: #eee;
+    border: 1px solid #514A3C;
+}
+
+.pagination button.active {
+    font-weight: 900;
+    border-color: #514A3C;
+    background: #93866C;
+    color: #E5CFB3;
+}
+
+/* MAP PAGE */
+.mapFrame {
+    width: 100%;
+    margin: 20px 0 20px 0;
+}
+
+/* USER ENTRY PAGE */
+.formUserEntry {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 20px 0 20px 0;
+}
+
+.formUserEntry input {
+    margin: 10px 0 10px 0;
+    padding: 6px;
+    border: 1px solid #93866C;
+    border-radius: 5px;
+    width: 100%;
+}
+
+.btnSubmit {
+    background-color: #514A3C;
+    color: #EBDBC6;
+}
+
+.mainContent p a {
+    color: #93866C;
+    text-decoration: none;
+}
+
+.txtErrorEntry {
+    text-align: center;
+    color: red;
+}
+
+/* USER DASHBOARD PAGE */
+.txtMyAccount {
+    /* margin-top: 20px; */
+    background-color: #514A3C;
+    color: #EBDBC6;
+    padding: 6px;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    font-weight: 300;
+}
+
+.userDashboardContent {
+    display: flex;
+    background-color: #EBDBC6;
+    color: black;
+}
+
+.userImgDashboard {
+    background-color: #C9BF9D;
+    padding: 6px;
+    width: 40%;
+    height: 120px;
+}
+
+.userImgDashboard img {
+    width: 100%;
+    margin: 0 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.userDashboardInfos {
+    padding: 6px;
+    line-height: 26px;
+    width: 100%;
+}
+
+.userDashboardInfos p {
+    display: flex;
+    justify-content: space-between;
+}
+
+.txtBrown {
+    color: #514A3C;
+}
+
+.h2MyInfos {
+    margin-bottom: 20px;
+}
+
+/* START ADMIN PAGE */
+.h2PanelAdmin {
+    width: 100%;
+}
+
+.adminLinks {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    align-items: center;
+    margin: 20px 0 20px 0;
+}
+
+.adminLinks a {
+    width: 50%;
+    margin: 6px;
+    padding: 6px;
+    background-color: #514A3C;
+    color: #EBDBC6;
+    border-radius: 5px;
+    text-decoration: none;
+    text-align: center;
+}
+
+/* ADMIN ADD MONSTER OUTLET */
+.formAddMonster {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+.formAddMonster input {
+    width: 45%;
+    margin: 4px;
+    padding: 2px;
+    background-color: #93866C;
+    color: #EBDBC6;
+    border: 1px solid #514A3C;
+    border-radius: 5px;
+}
+
+.formAddMonster input::placeholder {
+    color: #EBDBC6;
+}
+
+.formAddMonster input[type="file"] {
+    display: none;
+}
+
+.custom-file-upload {
+    text-align: center;
+    width: 80%;
+    margin: 4px;
+    padding: 2px;
+    background-color: #93866C;
+    color: #EBDBC6;
+    border: 1px solid #514A3C;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.formAddMonster select {
+    width: 45%;
+    margin: 4px;
+    padding: 2px;
+    background-color: #93866C;
+    color: #EBDBC6;
+    border: 1px solid #514A3C;
+    border-radius: 5px;
+}
+
+.formAddMonster .btnAddMonster {
+    background-color: #514A3C;
+    border: 1px solid #93866C;
+    width: 80%;
+    margin-top: 30px;
+    font-size: 2rem;
+    padding: 6px;
+}
+
+/* ADMIN DELETE MONSTER OUTLET */
+.listMonstersToDelete {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    margin: 4px;
+    padding: 4px;
+    color: #EBDBC6;
+    background-color: #93866C;
+    border: 1px solid #514A3C;
+    border-radius: 5px;
+}
+
+.btnDeleteMonster {
+    font-weight: 700;
+    background-color: transparent;
+    border: transparent;
+    color: #514A3C;
+    font-size: 1.6rem;
+}
+
+.btnDeleteMonster:hover {
+    color: #E5CFB3;
+    text-decoration: underline;
+}
+
+/* NEWS ADMIN PAGE */
+/* ADMIN ADD NEWS OUTLET */
+.formAddNews {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+.formAddNews label {
+    width: 100%;
+    margin: 4px;
+    padding: 4px;
+    background-color: #93866C;
+    color: #EBDBC6;
+    border-radius: 5px;
+}
+
+.formAddNews input, .formAddNews select, .formAddNews textarea {
+    width: 100%;
+    margin: 4px;
+    padding: 4px;
+    background-color: #93866C;
+    color: #EBDBC6;
+    border: 1px solid #514A3C;
+    border-radius: 5px;
+}
+
+.formAddNews ::placeholder {
+    color: #EBDBC6;
+    padding: 4px;
+}
+
+.formAddNews input[type="submit"] {
+    margin-top: 15px;
+    font-size: 2rem;
+    background-color: #514A3C;
+}
+
+.newsTogether {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    margin: 4px;
+    padding: 4px;
+    background-color: #93866C;
+    color: #EBDBC6;
+    border-radius: 5px;
+}
+
+/* ADMIN DELETE NEWS OUTLET */
+.newsToDelete {
+    display: flex;
+    /* justify-content: space-between; */
+    flex-wrap: wrap;
+    width: 100%;
+    margin-top: 10px;
+    padding: 4px;
+    background-color: #93866C;
+    color: #EBDBC6;
+    border-radius: 5px;
+}
+
+.newsToDelete > * {
+    width: 100%;
+}
+
+.btnDeleteNews {
+    margin-top: 10px;
+    font-weight: 700;
+    background-color: transparent;
+    border: transparent;
+    color: #514A3C;
+    font-size: 1.6rem;
+}
+/* ADMIN ADD CATEGORIES OUTLET */
+.formAddCategories {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.formAddCategories label {
+    width: 100%;
+    margin-top: 4px;
+    padding: 4px;
+    color: #514A3C;
+    border-radius: 5px;
+}
+
+.formAddCategories input {
+    width: 100%;
+    margin: 4px;
+    padding: 4px;
+    background-color: #93866C;
+    color: #EBDBC6;
+    border: 1px solid #514A3C;
+    border-radius: 5px;
+}
+/* FIN ADMIN PAGE */
+
+/* PAGE 404 */
+.article404 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 18px;
+}
+
+.article404 img {
+    width: 100%;
+}
+
+.article404 h3 {
+    margin-top: 20px;
+    font-size: 2rem;
+    text-align: center;
+    color: rgb(227, 35, 35);
+}
+
+.article404 h4 {
+    margin-top: 20px;
+    font-size: 1.6rem;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.article404 a {
+    margin-top: 20px;
+    font-size: 1.6rem;
+    text-align: center;
+    text-transform: uppercase;
+    text-decoration: none;
+    color: #E5CFB3;
+    background-color: #514A3C;
+    padding: 5px;
+    border-radius: 5px;
+}
+
+/* LEARN DOFUS PAGE */
+.titleLearnDofus {
+    text-align: center;
+    margin: 20px 0 20px 0;
+    background-color: #514A3C;
+    color: #E5CFB3;
+    border-radius: 5px;
+}
+
+.articleLearnDofus {
+    line-height: 30px;
+}
+
+.imgLearnDofus {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.imgLearnDofus img {
+    width: 100%;
+    margin: 6px 0 6px 0;
+}
+
+/* FOOTER */
+footer {
+    background-color: #514A3C;
+    color: #EBDBC6;
+    text-align: center;
+    padding: 10px;
+}
+
+footer a {
+    color: #EBDBC6;
+    text-decoration: none;
+    transition: all 0.3s ease;
+}
+
+footer a:hover {
+    color: #93866C;
+    text-decoration: none;
+}
+
+.learnDofus {
+    text-decoration: underline;
+}
+
+/* -------------------------------------- START MEDIA QUERIES -------------------------------------- */
+
+/* petit telephone avant 370px */
+@media screen and (max-width: 370px) {
+    
+    /* MAIN ELEMENTS */
+    .mainContent {
+        min-height: calc(90vh - 115px);
+    }
+
+    /* CLASSES PAGE */
+    .txtClasseDesc {
+        width: 50%;
+    }
+
+    .startRowIcons {
+        justify-content: flex-start;
+    }
+
+    /* USER DASHBOARD PAGE */s
+    .userImgDashboard {
+        height: 150px;
+    }
+}
+
+/* petit telephone avant 424px */
+@media screen and (max-width: 424px) {
+    
+    /* BESTIARY PAGE */
+    .statsMonster ul {
+        padding: 2px;
+        margin: 0;
+        justify-content: space-evenly;
+    }
+}
+
+/* tablette apres 768px */
+@media screen and (min-width: 768px) {
+    
+    /* MAIN ELEMENTS */
+    .mainContent {
+        min-height: calc(90vh - 109px);
+    }
+
+    /* HEADER + NAV */
+    header {
+        flex-direction: column;
+        padding: 0;
+        width: 100%;
+        background-position-y: -30px;
+    }
+
+    .sectionNav {
+        width: 100%;
+        display: flex;
+        align-items: center;
+    }
+    
+    .header-nav {
+        position: static;
+        flex-direction: row;
+        justify-content: space-evenly;
+        border-radius: 0;
+        padding: 4px;
+        width: 100%;
+    }
+
+    .header-nav a {
+        border-bottom: transparent;
+    }
+
+    /* BESTIARY PAGE */
+    .filtersMonsters {
+        flex-direction: row;
+    }
+
+
+    .statsMonster ul {
+        padding: 6px;
+        margin: 0;
+        justify-content: space-evenly;
+    }
+
+    /* ADMIN ADD CATEGORIES OUTLET */
+    .formAddCategories {
+        margin: 12px auto;
+        width: 80%;
+    }
+}
+
+/* ordinateur apres 1024px */
+@media screen and (min-width: 1024px) {
+
+    /* MAIN ELEMENTS */
+    header {
+        background-size: 100%;
+        min-height: 20vh;
+    }
+
+    h1 {
+        position: absolute;
+        top: 20px;
+        animation: slide 2s ease-in-out infinite alternate-reverse both;
+    }
+
+    .header-nav a:hover {
+        transform: scale(1.3);
+    }
+
+    .mainContent {
+        min-height: calc(90vh - 85px);
+    }    
+
+    /* HOME PAGE */
+    .sectionNews {
+        width: 45%;
+        margin-top: 8px;
+        transition: all 0.3s ease;
+    }
+
+    .sectionNews:hover {
+        transform: scale(1.02);
+        box-shadow: 0 0 20px #514A3C;
+    }
+
+    .positionNewsRow {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        align-items: center;
+        margin-top: 34px;
+    }
+
+    .positionNewsRow:hover section {
+        opacity: 0.9;
+    }
+
+    .positionNewsRow:hover .sectionNews:hover {
+        opacity: 1;
+    }
+
+    /* CLASSES PAGE */
+    .allClassesIcons > * {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 15%;
+        height: 150px;
+    }
+
+    .allClassesIcons a {
+        transition: all 0.3s;
+    }
+
+    .allClassesIcons a:hover {
+        transform: scale(1.05);
+        background-color: #93866C;
+    }
+
+    .classeOutlet {
+        width: 90%;
+        margin: 20px auto;
+    }
+
+    .classeName {
+        width: 60%;
+        margin: 22px auto;
+    }
+
+    .txtClasseDesc {
+        width: 20%;
+    }
+
+    /* BESTIARY PAGE */
+    .bestiarySearchBox {
+        flex-direction: row;
+        justify-content: space-between;
+    }
+    
+    #searchBar {
+        width: 60%;
+        margin-left: 24px;
+    }
+
+    .bestiarySearchBox {
+        flex-wrap: wrap;
+    }
+
+    .filtersMonsters {
+        justify-content: flex-start;
+    }
+
+    .filtersMonsters label {
+        margin-left: 24px;
+    }
+
+    .filtersMonsters select {
+        margin-left: 12px;
+    }
+
+    .sectionMonster {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+    }
+
+    .monstersFound {
+        width: 50%;
+        margin: 8px auto;
+        margin-left: 53%;
+    }
+
+    .monsterContent {
+        display: block;
+        text-align: center;
+    }
+
+    .monsterCard {
+        width: 45%;
+    }
+
+    /* USER DASHBOARD PAGE */
+    .userImgDashboard {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    
+    .userImgDashboard img {
+        width: 60%;
+        height: 100px;
+    }
+
+    /* ADMIN PAGE */
+    /* ADMIN ADD MONSTER OUTLET */
+    .monsterPreview {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    /* ADMIN DELETE POSTS OUTLET */
+    .postsPosition {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+    }
+
+    .newsToDelete {
+        width: 45%;
+    }
+
+    /* USER ENTRY PAGE */
+    .formUserEntry {
+        width: 50%;
+        margin: 10px auto;
+    }
+
+    .notYetRegistered {
+        text-align: center;
+    }
+
+    /* PAGE 404 */
+    .article404 img {
+        width: 60%;
+    }
+}
+
+/* ordinateur apres 1440px */
+@media screen and (min-width: 1440px) {
+
+    /* MAIN ELEMENTS */
+    header {
+        background-size: 100%;
+        background-position-y: -100px;
+    }
+
+    h1 {
+        top: 20px;
+        font-size: 8rem;
+    }
+
+    /* USER ENTRY PAGE */
+    .formUserEntry {
+        width: 40%;
+    }
+
+    /* BESTIARY PAGE */
+    .filtersMonsters {
+        width: 100%;
+    }
+
+    #searchBar {
+        width: 55%;
+        margin-left: 30px;
+    }
+
+    .filtersMonsters label {
+        margin-left: 30px;
+    }
+
+    .monsterContent {
+        display: flex;
+    }
+
+    .monstersFound {
+        margin-left: 58%;
+    }
+
+    /* PAGE 404 */
+    .article404 {
+        margin: 0;
+    }
+
+    .article404 img {
+        width: 40%;
+    }
+
+    /* LEARN DOFUS PAGE */
+    .titleLearnDofus {
+        background-color: transparent;
+        color: #514A3C;
+        border: 1px solid #514A3C;
+        width: 20%;
+        margin: 20px auto;
+    }
+
+    .imgLearnDofus {
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+
+    .imgLearnDofus img {
+        width: 30%;
+        margin: 10px;
+        transition: all 0.3s ease;
+        border-radius: 10px;
+    }
+
+    .imgLearnDofus img:hover {
+        transform: scale(1.05);
+        box-shadow: 0 0 10px #514A3C;
+    }
+}
